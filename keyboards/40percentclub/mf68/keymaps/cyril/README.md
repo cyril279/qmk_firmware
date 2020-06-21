@@ -1,4 +1,13 @@
-A custom-pcb keyboard project using the MagicForce 68 layout, powered by a "pro micro" atmega32u4
+**Bootloader configuration info (config.h):**  
+- k64 \[L\_Ctrl\] as dfu-escape key  
+- k14 \[Backspace\] as plug-to-reset key  
+
+Flash qmk-dfu:  
+`avrdude -c usbasp -p m32u4 -P usb -e -U lock:w:0x3F:m -U lfuse:w:0x5E:m -U hfuse:w:0xD9:m -U efuse:w:0xC3:m`  
+`avrdude -c usbasp -p m32u4 -P usb -D -U flash:w:"40percentclub_mf68_cyril_production.hex":a`  
+
+## A custom-pcb keyboard project using the MagicForce 68 layout
+Powered by a "pro micro" atmega32u4
 
 ![Imgur](https://i.imgur.com/CJMMnIm.jpg)
 
