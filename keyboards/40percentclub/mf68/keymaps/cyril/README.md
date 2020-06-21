@@ -1,6 +1,6 @@
 **Bootloader configuration info (config.h):**  
-- k64 \[L\_Ctrl\] as dfu-escape key  
-- k14 \[Backspace\] as plug-to-reset key  
+- k00 \[Esc\] as dfu-escape key  
+- k14 \[Backspace\] as plug-to-bootloader key  
 
 Flash qmk-dfu:  
 `avrdude -c usbasp -p m32u4 -P usb -e -U lock:w:0x3F:m -U lfuse:w:0x5E:m -U hfuse:w:0xD9:m -U efuse:w:0xC3:m`  

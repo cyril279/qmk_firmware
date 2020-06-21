@@ -1,9 +1,9 @@
 #define PERMISSIVE_HOLD
 #define IGNORE_MOD_TAP_INTERRUPT
 
-// set k64 [L_Ctrl] as dfu-escape key
-#define QMK_ESC_INPUT F5 // usually ROW
-#define QMK_ESC_OUTPUT D4 // usually COL
+// set k00 [Esc] as dfu-escape key
+#define QMK_ESC_INPUT B6 // usually ROW
+#define QMK_ESC_OUTPUT D3 // usually COL
 
 // set k14 [Backspace] as reset key
 #define BOOTMAGIC_LITE_ROW 1
